@@ -20,7 +20,7 @@ public class cgCTL {
 		CGUI.setState5(false);
 		CGUI.setState6(false);
 		CGUI.Refresh3();
-
+// Show Unit lists in the combo box in the user interface
 		ListUnitsCTL luCTL = new ListUnitsCTL();
 		luCTL.listUnits(CGUI);
 		CGUI.setVisible(true);
@@ -28,7 +28,7 @@ public class cgCTL {
 	}
 
 	public void unitSelected(String code) {
-
+// SHOW THE LIST OF STUDENTS IN THE Student Combo Box
 		if (code.equals("NONE"))
 			CGUI.setState2(false);
 		else {
@@ -39,7 +39,7 @@ public class cgCTL {
 		}
 		CGUI.setState3(false);
 	}
-
+// once the student Id is selceted the below process will get the selected Student ID 
 	public void studentSelected(Integer id) {
 		currentStudentID = id;
 		if (currentStudentID.intValue() == 0) {
@@ -75,7 +75,7 @@ public class cgCTL {
 		}
 		return s;
 	}
-
+//enable the change marks button
 	public void enableChangeMarks() {
 		CGUI.setState4(false);
 		CGUI.setState6(false);
